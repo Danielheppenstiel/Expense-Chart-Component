@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 62.5%; /* 1rem = 10px approx. */
+
+    /* COLORS */
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+    background-color: var(--cream);
+    display: grid;
+    place-items: center;
+}
+
+/* BALANCE SECTION */
+
+#balance-section {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--soft-red);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    min-width: 375px;
+    max-width: 500px;
+    height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 1.5rem;
+}
+
+.my-balance {
+    line-height: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.balance-amount {
+    font-weight: normal;
+}
+
+/* SPENDING SECTION */
+
+#spending-section {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-columns: 1fr;
+    height: 40rem;
+    width: 90%;
+    min-width: 375px;
+    max-width: 500px;
+    background: var(--pale-orange);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 1.5rem;
+}
+
+#spending-heading {
+    place-self: center;
+}
+
+#chart {
+    /* width: 90%; */
+    display: flex;
+    place-items: end center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+.day {
+    width: 4rem;
+    text-align: center;
+}
+
+.chart-day {
+    color: var(--medium-brown);
+    font-size: 1.3rem;
+}
+
+/* BARS */
+
+#monday {
+    height: 6rem;
+    background: var(--soft-red);
+    border-radius: 0.5rem;
+}
+
+#tuesday {
+    height: 11rem;
+    background: var(--soft-red);
+    border-radius: 0.5rem;
+}
+
+#wednesday {
+    height: 16rem;
+    background: var(--soft-red);
+    border-radius: 0.5rem;
+}
+
+#thursday {
+    height: 9rem;
+    background: var(--soft-red);
+    border-radius: 0.5rem;
+}
+
+#friday {
+    height: 7rem;
+    background: var(--soft-red);
+    border-radius: 0.5rem;
+}
+
+#saturday {
+    height: 14rem;
+    background: var(--soft-red);
+    border-radius: 0.5rem;
+}
+
+#sunday {
+    height: 8rem;
+    background: var(--soft-red);
+    border-radius: 0.5rem;
+}
+
+.data-display {
+    color: #fff;
+    background: var(--dark-brown);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+hr {
+    position: absolute;
+    height: 2px;
+    width: 90%;
+    justify-self: center;
+    margin-top: 1.5rem;
+}
+
+.total {
+    align-self: center;
+    line-height: 30px;
+}
+
+.total h2 {
+    font-size: 2.5rem;
+}
+
+.total h4 {
+    color: var(--medium-brown)
+}
+
+.last-month {
+    margin-top: 1.8rem;
+    align-self: center;
+    line-height: 15px;
+}
+
+.last-month h4 {
+    color: var(--medium-brown);
+}
+
+.last-month h3 {
+    font-size: 1.5rem;
+}

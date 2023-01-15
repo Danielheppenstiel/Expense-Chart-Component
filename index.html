@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Expense Chart Component</title>
+</head>
+
+<body>
+  
+  <!-- BALANCE SECTION -->
+
+  <header id="balance-section">
+    <div class="my-balance">
+      <h4>My Balance</h3>
+      <h2 class="balance-amount">$921.48</h2>
+    </div>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+  </header>
+
+  <!-- SPENDING SECTION -->
+
+  <main id="spending-section">
+    <h1 id="spending-heading">Spending - Last 7 Days</h1>
+
+    <!-- CHART -->
+
+    <div id="chart">
+
+      <div class="day">
+        <div id="mon-data" class=""></div>
+        <div id="monday" class="bar"></div>
+        <div class="chart-day">mon</div>
+      </div>
+
+      <div class="day">
+        <div id="tue-data" class=""></div>
+        <div id="tuesday" class="bar"></div>
+        <div class="chart-day">tue</div>
+      </div>
+
+      <div class="day">
+        <div id="wed-data" class=""></div>
+        <div id="wednesday" class="bar"></div>
+        <div class="chart-day">wed</div>
+      </div>
+
+      <div class="day">
+        <div id="thu-data" class=""></div>
+        <div id="thursday" class="bar"></div>
+        <div class="chart-day">thu</div>
+      </div>
+
+      <div class="day">
+        <div id="fri-data" class=""></div>
+        <div id="friday" class="bar"></div>
+        <div class="chart-day">fri</div>
+      </div>
+
+      <div class="day">
+        <div id="sat-data" class=""></div>
+        <div id="saturday" class="bar"></div>
+        <div class="chart-day">sat</div>
+      </div>
+
+      <div class="day">
+        <div id="sun-data" class=""></div>
+        <div id="sunday" class="bar"></div>
+        <div class="chart-day">sun</div>
+      </div>
+
+    </div>
+    
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+
+      <hr>
+
+      <div class="total">
+        <h4>Total this month</h3>
+        <h2>$478.33</h2>
+      </div>
+  
+      <div class="last-month">
+        <h3>+2.4%</h3>
+        <h4>from last month</h4>
+      </div>
+
+    </footer>
+    
+  </main>
+
+
+
+  <script src="./src/data.js"></script>
+  <script src="./src/ui.js"></script>
+  <script src="./src/main.js"></script>
+</body>
+
+</html>
